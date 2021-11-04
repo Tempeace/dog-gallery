@@ -5,7 +5,7 @@
       <div class="gallery__container__text">
         {{ dog.split("/")[4] }}
       </div>
-      <div
+      <button
         @click="
           favoriteDogs.includes(dog)
             ? removeDogFromFavorites(dog)
@@ -19,7 +19,7 @@
           :width="30"
           @click="saveFavoriteDog(dog)"
         />
-      </div>
+      </button>
     </div>
   </div>
 </template>

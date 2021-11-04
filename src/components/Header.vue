@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <div class="header__title" @click="$router.push({ name: 'Home' })">
+    <router-link class="header__title" :to="{ name: 'Home' }">
       ПЁСЕЛЬ
-    </div>
+    </router-link>
     <div
       class="header__right-text dg-general"
       @click="$router.push({ name: 'Favorites' })"
