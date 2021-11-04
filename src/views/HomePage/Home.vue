@@ -11,7 +11,7 @@
         <BaseSwitch v-model="isSorted" />
       </div>
     </div>
-    <Gallery :dogs="isSorted ? sortedDogs : dogs" @scroll="onScroll" />
+    <Gallery :dogs="isSorted ? sortedDogs : dogs" />
   </div>
 </template>
 
