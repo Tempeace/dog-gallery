@@ -39,7 +39,7 @@ export default {
     ...mapState(["favoriteDogs"]),
   },
   methods: {
-    ...mapActions(["SAVE_FAVORITE_DOGS", "REMOVE_DOG_FROM_FAVORITES"]),
+    ...mapActions(["SAVE_FAVORITE_DOG", "REMOVE_DOG_FROM_FAVORITES"]),
     saveFavoriteDog(favoriteDog) {
       this.SAVE_FAVORITE_DOG(favoriteDog);
     },
